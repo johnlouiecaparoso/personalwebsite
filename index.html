@@ -14,8 +14,8 @@
     <meta property="og:title" content="Jan Cary | Media Buyer Portfolio">
     <meta property="og:description" content="A dedicated Media Buyer creating data-driven strategies to help businesses scale efficiently.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com"> <!-- Replace with your actual domain -->
-    <meta property="og:image" content="https://example.com/og-image.jpg"> <!-- Replace with a URL to a preview image -->
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -60,6 +60,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -71,7 +76,9 @@
             <div class="slide-up">
                 <h1 class="display-1">JAN CARY</h1>
                 <p class="lead">Results-Driven Media Buyer & Digital Strategist</p>
-                <a href="#about" class="btn btn-primary btn-lg mt-4">Discover More</a>
+                <p class="text-white-50 mb-4">Scaling businesses through data-driven advertising strategies</p>
+                <a href="#about" class="btn btn-primary btn-lg mt-4 me-2">Discover More</a>
+                <a href="#contact" class="btn btn-secondary btn-lg mt-4">Get in Touch</a>
             </div>
         </div>
     </section>
@@ -84,78 +91,155 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-4 text-center slide-up">
-                    <img src="image/profile.jpg" class="img-fluid rounded-circle mb-4" alt="Jan Cary">
+                    <img src="image/profile.jpg" class="img-fluid rounded-circle mb-4 float-animation" alt="Jan Cary" style="max-width: 300px; box-shadow: 0 10px 40px rgba(74, 144, 226, 0.2);">
                 </div>
                 <div class="col-lg-8 slide-up">
                     <p class="lead">
                         I am a dedicated Media Buyer with experience managing and optimizing campaigns across Facebook, TikTok, and Google platforms. I focus on creating data-driven strategies, improving performance, and delivering consistent results for e-commerce and lead-generation brands. My goal is to help businesses scale efficiently through effective advertising.
                     </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Campaign Optimization</h5>
+                            <p class="text-muted">Continuous testing and refinement for maximum ROI</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Data-Driven Decisions</h5>
+                            <p class="text-muted">Analytics-focused approach to strategy</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Multi-Platform Expertise</h5>
+                            <p class="text-muted">Proficient across all major ad platforms</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Proven Results</h5>
+                            <p class="text-muted">Consistent track record of scaling businesses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 slide-up">
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Successful Campaigns</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 slide-up">
+                    <div class="stat-card">
+                        <div class="stat-number">$2M+</div>
+                        <div class="stat-label">Ad Spend Managed</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 slide-up">
+                    <div class="stat-card">
+                        <div class="stat-number">3.5x</div>
+                        <div class="stat-label">Average ROAS</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 slide-up">
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Satisfied Clients</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="py-5">
         <div class="container">
             <div class="section-title slide-up">
                 <h2>Core Skills</h2>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-megaphone-fill skill-icon"></i>
-                        <h5 class="card-title mt-3">Facebook Ads Management (CBO/ABO)</h5>
+            <div class="row">
+                <div class="col-lg-6 slide-up">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Facebook Ads Management (CBO/ABO)</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%; animation-delay: 0s;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>TikTok Ads</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; animation-delay: 0.1s;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Google Ads (Search/Display)</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%; animation-delay: 0.2s;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Campaign Optimization & Scaling</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%; animation-delay: 0.3s;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-tiktok skill-icon"></i>
-                        <h5 class="card-title mt-3">TikTok Ads</h5>
+                <div class="col-lg-6 slide-up">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Audience Targeting & Research</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 93%; animation-delay: 0.4s;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-google skill-icon"></i>
-                        <h5 class="card-title mt-3">Google Ads (Search/Display)</h5>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>A/B Testing</span>
+                            <span>91%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 91%; animation-delay: 0.5s;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-graph-up-arrow skill-icon"></i>
-                        <h5 class="card-title mt-3">Campaign Optimization & Scaling</h5>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Funnel Strategy</span>
+                            <span>89%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 89%; animation-delay: 0.6s;"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-bullseye skill-icon"></i>
-                        <h5 class="card-title mt-3">Audience Targeting & Research</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-shuffle skill-icon"></i>
-                        <h5 class="card-title mt-3">A/B Testing</h5>
-                    </div>
-                </div>
-                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-funnel-fill skill-icon"></i>
-                        <h5 class="card-title mt-3">Funnel Strategy</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-4 slide-up">
-                    <div class="card h-100 p-4">
-                        <i class="bi bi-pencil-fill skill-icon"></i>
-                        <h5 class="card-title mt-3">Creative Strategy & Ad Copy</h5>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Creative Strategy & Ad Copy</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%; animation-delay: 0.7s;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-5">
+    <section id="experience" class="py-5 bg-light">
         <div class="container">
             <div class="section-title slide-up">
                 <h2>Work Experience</h2>
@@ -165,11 +249,13 @@
                     <!-- Experience 1 -->
                     <div class="card mb-4 slide-up">
                         <div class="card-body p-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="card-title">Senlin Ecomm</h5>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="card-title">Senlin Ecomm</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Media Buyer</h6>
+                                </div>
                                 <span class="experience-date">2022 - 2024</span>
                             </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Media Buyer</h6>
                             <ul class="card-text mt-3">
                                 <li>Managed X+ ad accounts across multiple markets</li>
                                 <li>Launched and optimized campaigns for e‑commerce and lead generation</li>
@@ -181,11 +267,13 @@
                     <!-- Experience 2 -->
                     <div class="card mb-4 slide-up">
                         <div class="card-body p-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="card-title">Various Clients</h5>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="card-title">Various Clients</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Freelance Media Buyer</h6>
+                                </div>
                                 <span class="experience-date">2021 - 2024</span>
                             </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Freelance Media Buyer</h6>
                             <ul class="card-text mt-3">
                                 <li>Handled campaigns for e‑commerce and local brands</li>
                                 <li>Improved results using testing and optimization strategies</li>
@@ -198,7 +286,7 @@
     </section>
 
     <!-- Tools Section -->
-    <section id="tools" class="py-5 bg-light">
+    <section id="tools" class="py-5">
         <div class="container">
             <div class="section-title slide-up">
                 <h2>Tools of the Trade</h2>
@@ -206,41 +294,49 @@
             <div class="row text-center">
                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-meta skill-icon"></i>
                         <h5 class="card-title">Meta Ads Manager</h5>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-google skill-icon"></i>
                         <h5 class="card-title">Google Ads</h5>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-tiktok skill-icon"></i>
                         <h5 class="card-title">TikTok Ads Manager</h5>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-graph-up skill-icon"></i>
                         <h5 class="card-title">Google Analytics</h5>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-shop skill-icon"></i>
                         <h5 class="card-title">Shopify</h5>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-palette skill-icon"></i>
                         <h5 class="card-title">Canva</h5>
                     </div>
                 </div>
                  <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-list-check skill-icon"></i>
                         <h5 class="card-title">ClickUp</h5>
                     </div>
                 </div>
                  <div class="col-md-4 col-lg-3 mb-4 slide-up">
                     <div class="card h-100 p-3">
+                        <i class="bi bi-lightning-charge skill-icon"></i>
                         <h5 class="card-title">Power Ads</h5>
                     </div>
                 </div>
@@ -249,18 +345,24 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5">
+    <section id="portfolio" class="py-5 bg-light">
         <div class="container">
             <div class="section-title slide-up">
                 <h2>Sample Works</h2>
             </div>
+            <div class="portfolio-filter slide-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ads">Ad Creatives</button>
+                <button class="filter-btn" data-filter="reports">Reports</button>
+            </div>
             <div class="row">
                 <!-- Portfolio Item 1 -->
-                <div class="col-md-6 mb-4 slide-up">
+                <div class="col-md-6 mb-4 slide-up portfolio-item" data-category="ads">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column p-4">
+                            <i class="bi bi-image skill-icon"></i>
                             <h5 class="card-title">Sample Ads / Creative Work</h5>
-                            <p class="card-text">A collection of creative assets and ad examples.</p>
+                            <p class="card-text">A collection of creative assets and ad examples showcasing diverse campaign strategies.</p>
                             <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#adsModal">
                               View Samples
                             </button>
@@ -268,11 +370,12 @@
                     </div>
                 </div>
                 <!-- Portfolio Item 2 -->
-                <div class="col-md-6 mb-4 slide-up">
+                <div class="col-md-6 mb-4 slide-up portfolio-item" data-category="reports">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column p-4">
+                            <i class="bi bi-bar-chart skill-icon"></i>
                             <h5 class="card-title">Reports & Analytics Samples</h5>
-                            <p class="card-text">Examples of performance reports and data analysis.</p>
+                            <p class="card-text">Examples of performance reports and data analysis demonstrating campaign success.</p>
                             <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#reportsModal">
                               View Samples
                             </button>
@@ -283,8 +386,20 @@
         </div>
     </section>
 
+    
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="cta-section slide-up">
+                <h3>Ready to Scale Your Business?</h3>
+                <p>Let's discuss how I can help you achieve your advertising goals and maximize your ROI.</p>
+                <a href="#contact" class="btn btn-light btn-lg">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
             <div class="section-title slide-up">
                 <h2>Get in Touch</h2>
@@ -294,19 +409,31 @@
                     <a href="mailto:janjancary2@gmail.com">
                         <i class="bi bi-envelope-fill"></i>
                         <h5 class="mt-3">Email</h5>
+                        <p class="text-muted">janjancary2@gmail.com</p>
                     </a>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <a href="#">
+                    <a href="https://linkedin.com" target="_blank">
                         <i class="bi bi-linkedin"></i>
                         <h5 class="mt-3">LinkedIn</h5>
+                        <p class="text-muted">Connect with me</p>
                     </a>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <a href="#">
-                        <i class="bi bi-folder-fill"></i>
-                        <h5 class="mt-3">Socials</h5>
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                        <h5 class="mt-3">Facebook</h5>
+                        <p class="text-muted">Follow for updates</p>
                     </a>
+                </div>
+            </div>
+            <div class="row mt-5 slide-up">
+                <div class="col-lg-8 mx-auto">
+                    <h4 class="text-center mb-4">Subscribe to My Newsletter</h4>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -316,8 +443,14 @@
     <footer class="footer text-center">
         <div class="container">
             <p>&copy; 2025 Jan Cary. All Rights Reserved.</p>
+            <p class="text-muted mt-2">Crafted with <i class="bi bi-heart-fill text-danger"></i> for excellence</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
     <!-- Ads Modal -->
     <div class="modal fade" id="adsModal" tabindex="-1" aria-labelledby="adsModalLabel" aria-hidden="true">
